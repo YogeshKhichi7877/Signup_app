@@ -1,7 +1,13 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-app.use(cors());
+//app.use(cors());
+// Allow only your GitHub Pages frontend
+app.use(cors({
+  origin: 'https://yogeshkhichi7877.github.io'
+}));
+
+// ...rest of your server code
 
 const bcrypt = require('bcrypt');
 const db = require('./db');
