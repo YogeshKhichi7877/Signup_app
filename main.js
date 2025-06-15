@@ -19,7 +19,7 @@ document.querySelector('form').addEventListener('submit', async (e) => {
 if (username === "" || password === "" || age === "" || email === "") {
   alert("Please enter your name, email , age, and password");
 } else {
-  const response = await fetch('http://localhost:3000/signup', {
+  const response = await fetch('https://signup-ai-model2.onrender.com/signup', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({

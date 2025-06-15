@@ -97,5 +97,5 @@ app.get('/logout' , (req ,res)=>{
 })
 
 app.listen(3000 , ()=>{
-    console.log('http://localhost:3000');
+    console.log('https://signup-ai-model2.onrender.com');
 });
