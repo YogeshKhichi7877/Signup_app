@@ -3,10 +3,7 @@ require('dotenv').config();
 
 const mongoUrl = "mongodb+srv://lalitkhichi796:lalit526@cluster0.pmaofkq.mongodb.net/" ;
 
-mongoose.connect(mongoUrl , {
-    useNewUrlParser : true ,
-    useUnifiedTopology : true 
-});
+mongoose.connect(mongoUrl);
 
 const db = mongoose.connection ;
 
