@@ -29,7 +29,15 @@ if (username === "" || password === "" || age === "" || email === "") {
       age: age,
      
     })
+    
   });
+    if (response.ok) {
+  // Login successful, redirect to your main site
+    window.location.href = "index.html"; // <-- CHANGE to your main site URL
+} else {
+  // Success logic here
+    alert(data.error);
+}
   const data = await response.json(); // If the response is JSON
   console.log(data);
 }  
