@@ -7,7 +7,7 @@ const password = document.querySelector("#password").value;
 if (username === "" || password === "") {
   alert("Please enter your name and password");
 } else {
-  const response = await fetch('https://signup-ai-model2.onrender.com/login', {
+  const response = await fetch('http://localhost:5000/login', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
